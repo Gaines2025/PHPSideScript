@@ -6,6 +6,7 @@ include "view-header.php";
 <?php
 echo getDisplay();
 include "view-footer.php";
+?>
 
 function getDisplay() {
     if (isset($_POST['my-name'])) {
