@@ -6,10 +6,10 @@ include "view-header.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Operations</title>
+    <title>JavaScript Functions</title>
 </head>
 <body>
-    <h1>Math Operations</h1>
+    <h1>JavaScript Functions</h1>
 
     <label for="num1">Enter the first number:</label>
     <input type="number" id="num1" step="any"><br><br>
@@ -25,37 +25,40 @@ include "view-header.php";
     <p id="result"></p>
 
     <script>
-        // Function to add two numbers
-        function addNumbers() {
+        function addNumbers() 
+        {
             const num1 = parseFloat(document.getElementById("num1").value);
             const num2 = parseFloat(document.getElementById("num2").value);
             const result = num1 + num2;
             document.getElementById("result").textContent = `The sum of ${num1} and ${num2} is ${result}`;
         }
 
-        // Function to subtract two numbers
-        function subtractNumbers() {
+        function subtractNumbers()
+        {
             const num1 = parseFloat(document.getElementById("num1").value);
             const num2 = parseFloat(document.getElementById("num2").value);
             const result = num1 - num2;
             document.getElementById("result").textContent = `The difference between ${num1} and ${num2} is ${result}`;
         }
 
-        // Function to multiply two numbers
-        function multiplyNumbers() {
+        function multiplyNumbers() 
+        {
             const num1 = parseFloat(document.getElementById("num1").value);
             const num2 = parseFloat(document.getElementById("num2").value);
             const result = num1 * num2;
             document.getElementById("result").textContent = `The product of ${num1} and ${num2} is ${result}`;
         }
 
-        // Function to divide two numbers
-        function divideNumbers() {
+        function divideNumbers() 
+        {
             const num1 = parseFloat(document.getElementById("num1").value);
             const num2 = parseFloat(document.getElementById("num2").value);
-            if (num2 === 0) {
+            if (num2 === 0)
+            {
                 document.getElementById("result").textContent = "Division by zero is not allowed.";
-            } else {
+            }
+            else 
+            {
                 const result = num1 / num2;
                 document.getElementById("result").textContent = `The quotient of ${num1} divided by ${num2} is ${result}`;
             }
