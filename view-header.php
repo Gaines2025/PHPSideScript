@@ -31,6 +31,9 @@
          <li class="nav-item">
           <a class="nav-link" href="get-result.php">Get result</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javaFunctions.html">JavaFunctions</a>
+        </li>
       </ul>
     </div>
   </div>
